@@ -1,0 +1,285 @@
+@media (max-width: 1200px){
+    .education_area .education_inner_area .education_item, .career_area .career_inner_area .career_item{
+        max-width: 357px;
+    }    
+}
+/* Required for fix 1px gap issue */
+@media (min-width: 1200px){
+    .education_area .education_inner_area .education_item, .career_area .career_inner_area .career_item{
+        max-width: 420px;
+    }    
+}
+
+
+@media (max-width: 992px){
+    .about_area .about_details h3{
+        font-size: 24px;
+    }
+    .education_area .education_inner_area .education_item, .career_area .career_inner_area .career_item{
+        max-width: 273px;
+        min-height: 276px;
+    }
+    .main_title{
+        padding: 40px 0px;
+    }
+}
+/* Required for fix 1px gap issue */
+@media (min-width: 992px) and (max-width: 1199px){
+    .about_area .about_details h3{
+        font-size: 32px;
+    }
+    .education_area .education_inner_area .education_item, .career_area .career_inner_area .career_item{
+        max-width: 357px;
+        min-height: 185px;
+    }
+    .main_title{
+        padding: 60px 0px;
+    }
+}
+
+@media (max-width: 768px){
+    /* START ABOUT */
+    .about_area{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .about_area .photo_area .download_btn{
+        margin-top: 20px;
+    }
+    .about_area .about_details h3{
+        font-size: 28px;
+    }
+    /* END EDUCATION */
+
+    /* START SKILL */
+    .skill_area .skill_title h4{
+        text-align: center;
+    }
+    /* END SKILL */
+    
+    /* START EDUCATION */
+    .education_area, .career_area{
+        width: 100%;
+    }
+    .education_area .education_inner_area .education_item:nth-child(odd), .career_area .career_inner_area .career_item:nth-child(odd){
+        float: none;
+    }
+    .education_area .education_inner_area .education_item:nth-child(even), .career_area .career_inner_area .career_item:nth-child(even){
+        float: none;
+        margin-top: 30px;
+    }
+    .education_area .education_inner_area::before, .career_area .career_inner_area::before{     /* Hide Vertical Line */
+        display: none;
+    }
+    .education_area .education_inner_area .education_item, .career_area .career_inner_area .career_item{
+        margin: 0px auto 30px;
+        padding-top: 50px;
+        min-width: 70%;
+        min-height: 100%;
+    }
+    .education_area .education_inner_area .education_item::after, .career_area .career_inner_area .career_item::after{    /* Hide horizontal line */
+        display: none;
+    }
+    .education_area .education_inner_area .education_item:nth-child(odd)::before, .career_area .career_inner_area .career_item:nth-child(odd)::before{
+        right: auto;
+        left: 42.5%;
+    }
+    .education_area .education_inner_area .education_item:nth-child(even)::before, .career_area .career_inner_area .career_item:nth-child(even)::before{
+        right: 42.5%;
+        left: auto;
+    }
+    /* END EDUCATION */
+
+    /* START PORTFOLIO */
+    .portfolio_area .portfolio_item, .portfolio_area .portfolio_web_item{
+        max-width: 70%;
+        margin: auto;
+    }
+    /* END PORTFOLIO */
+
+    /* START CONTACT */
+    .left_contact_details{
+        padding-left: 50px;
+    }
+    /* END CONTACT */
+}
+/* Required for fix 1px gap issue */
+@media (min-width: 768px) and (max-width: 991px){
+    /* START ABOUT */
+    .about_area{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .about_area .photo_area .download_btn{
+        margin-top: 40px;
+    }
+    .about_area .about_details h3{
+        font-size: 24px;
+    }
+    /* END EDUCATION */
+
+    /* START SKILL */
+    .skill_area .skill_title h4{
+        text-align: left;
+    }
+    /* END SKILL */
+    
+    /* START EDUCATION */
+    .education_area, .career_area{
+        width: auto;
+    }
+    .education_area .education_inner_area .education_item:nth-child(odd), .career_area .career_inner_area .career_item:nth-child(odd){
+        float: left;
+    }
+    .education_area .education_inner_area .education_item:nth-child(even), .career_area .career_inner_area .career_item:nth-child(even){
+        float: right;
+        margin-top: 108px;
+    }
+    .education_area .education_inner_area::before, .career_area .career_inner_area::before{
+        display: block;
+    }
+    .education_area .education_inner_area .education_item, .career_area .career_inner_area .career_item{
+        margin: 0px 5% 30px;
+        padding-top: 20px;
+        max-width: 273px;
+        min-height: 276px;
+        min-width: 0%;
+    }
+    .education_area .education_inner_area .education_item::after, .career_area .career_inner_area .career_item::after{
+        display: inline;
+    }
+    .education_area .education_inner_area .education_item:nth-child(odd)::before, .career_area .career_inner_area .career_item:nth-child(odd)::before{
+        right: -28.5%;
+        left: auto;
+    }
+    .education_area .education_inner_area .education_item:nth-child(even)::before, .career_area .career_inner_area .career_item:nth-child(even)::before{
+        right: auto;
+        left: -27%;
+    }
+    /* END EDUCATION */
+
+    /* START PORTFOLIO */
+    .portfolio_area .portfolio_item{
+        max-width: 100%;
+        margin: auto .5rem;
+    }
+    .portfolio_area .portfolio_web_item{
+        max-width: 50%;
+    }
+    /* END PORTFOLIO */
+
+    /* START CONTACT */
+    .left_contact_details{
+        padding-left: 100px;
+    }
+    /* END CONTACT */
+}
+
+@media (max-width: 600px){
+    /* START CONTACT */
+    .left_contact_details{
+        padding: 0px 3rem;
+    }
+    /* END CONTACT */
+}
+@media (min-width: 600px) and (max-width: 767px){
+    /* START CONTACT */
+    .left_contact_details{
+        padding-left: 50px;
+    }
+    /* END CONTACT */
+}
+
+@media (max-width: 500px){
+    .main_title{
+        padding: 15px 0px;
+    }
+    .about_area .about_details h3{
+        font-size: 24px;
+    }
+    .about_area .about_details p{
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 500px) and (max-width: 767px){
+    .main_title{
+        padding: 20px 0px;
+    }
+    .about_area .about_details h3{
+        font-size: 24px;
+    }
+    .about_area .about_details p{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 450px){
+    .main_title h2{
+        font-size: 28px; 
+    }
+    .skill_area .skill_title h4, .portfolio_area .portfolio_title h4{
+        font-size: 20px;
+    }
+    .about_area .about_details h3{
+        font-size: 20px;
+    }
+    .about_area .about_details h4{
+        font-size: 18px;
+    }
+    .about_area .about_details h5{
+        font-size: 14px;
+    }
+}
+@media (min-width: 450px) and (max-width: 500px){
+    .about_area .about_details h3{
+        font-size: 24px;
+    }
+    .about_area .about_details h4{
+        font-size: 20px;
+    }
+    .about_area .about_details h5{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 376px){
+    .main_title h2{
+        font-size: 24px; 
+    }
+    .about_area .about_details h3{
+        font-size: 18px;
+    }
+    .about_area .about_details h4{
+        font-size: 16px;
+    }
+    .about_area .about_details h5{
+        font-size: 12px;
+    }
+    .about_area .about_details .social_icon li{
+        margin-right: 15px;
+    }
+    .competition_list .single_competition{
+        font-size: 12px;
+    }
+    .education_area .education_inner_area .education_item:nth-child(odd)::before, .career_area .career_inner_area .career_item:nth-child(odd)::before{
+        right: 40%;
+        left: auto;
+    }
+    .education_area .education_inner_area .education_item:nth-child(even)::before, .career_area .career_inner_area .career_item:nth-child(even)::before{
+        right: auto;
+        left: 40%;
+    }
+}
+
+@media (max-width: 350px){
+    .main_container{
+        padding: 0px;
+    }
+    .about_area .about_details p{
+        font-size: 12px;
+    }
+
+    .left_contact_details .media .media-body p{
+        font-size: 12px;
+    }
+}

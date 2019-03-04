@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Raleway:100,200,300,400,500,600,700,800,900|Yellowtail");
+
+body{
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+}
+
+body, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+}
+
+/* START MAIN ========================================================================================= */
+.main_container{
+  margin-top: 50px;
+}
+
+.main_title{
+  text-align: center;
+  padding: 60px 0px;
+}
+
+.main_title h2{
+  font-size: 36px;
+  font-family: "Bree Serif", serif;
+  text-transform: uppercase;
+  border-left: 3px solid #26b7e7;
+  border-bottom: 3px solid #26b7e7;
+  display: inline-block;
+  line-height: 50px;
+  padding: 0px 23px;
+}
+/* END MAIN ========================================================================================= */
+
+/* START HEADER AREA ========================================================================================= */
+.header_area{
+    line-height: 50px;
+}
+
+.header_area .navbar .navbar-collapse .navbar-nav .nav-item a:hover{
+  color: rgba(255, 255, 255, 1);
+  transition: all 400ms linear 0s;
+}
+
+.header_area.sticky-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  .header_area.sticky-fixed + section, .header_area.sticky-fixed + div, .header_area.sticky-fixed + .row {
+    margin-top: 80px;
+  }
+/* END HEADER AREA ========================================================================================= */
+
+/* START ABOUT AREA ========================================================================================= */
+.about_area{
+  padding: 40px 3rem;
+}
+
+.about_area .photo_area img{
+  max-width: 100%;
+}
+
+.about_area .photo_area .download_btn{
+  margin-top: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about_area .photo_area .download_btn span{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transition: all 400ms linear 0s;
+}
+
+.about_area .photo_area .download_btn:before{
+  content: "\f019"; /*FontAwesome icon: fas fa-download */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  top: -100%;
+  left: 0px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  transition: all 200ms ease-in;
+}
+
+.about_area .photo_area .download_btn:hover span{
+  transform: translateY(300%);
+  -webkit-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -o-transform: translateY(300%);
+}
+
+.about_area .photo_area .download_btn:hover:before{
+  top: 0px;
+}
+
+.about_area .about_details h3{
+  margin: 1rem auto .5rem .5rem;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.about_area .about_details h4{
+  margin: auto auto .5rem .5rem;
+  font-size: 20px;
+}
+
+.about_area .about_details h5{
+  margin: auto auto 1rem .5rem;
+  font-size: 16px;
+}
+
+.about_area .about_details p{
+  margin: auto auto 3rem 1.5rem;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.about_area .about_details .social_icon li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.about_area .about_details .social_icon li a{
+  height: 40px;
+  width: 40px;
+  display: block;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 24px;
+  transition: all 400ms linear 0s;
+}
+
+/* END ABOUT AREA ========================================================================================= */
+
+/* START SKILL AREA ========================================================================================= */
+.skill_area{
+  text-transform: uppercase;
+  padding: 0px 3rem;
+}
+
+.skill_area .skill_container{
+  margin: .5rem auto;
+}
+
+.skill_area .skill_title{
+  padding: .5rem 0px;
+}
+
+.skill_area .skill_title h4{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.skill_area .skill_item_inner .skill_item h4{
+  padding: 1rem 0px .25rem;
+  font-size: 16px;
+  font-weight: bold;  
+}
+
+.skill_area .skill_item_inner .skill_item .progress{
+  height: 30px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.skill_area .skill_item_inner .skill_item .progress .progress-bar .progress_parcent{
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* END SKILL AREA ========================================================================================= */
+
+/* START COMPETITION AREA ========================================================================================= */
+.competition_area{
+  width: 75%;
+}
+
+.competition_container{
+  padding: 0px 15px 10px;
+}
+
+.competition_container .competition_list{
+  padding: 0px;
+}
+
+.competition_list .single_competition{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.competition_title{
+  padding: 25px 0px 20px 0px;
+}
+
+.competition_title h3{
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+/* END COMPETITION AREA ========================================================================================= */
+
+/* START EDUCATION AND CAREER AREA ========================================================================================= */
+/* start center vertical line */
+.education_area .education_inner_area, .career_area, .career_inner_area{
+  position: relative;
+  overflow: hidden;
+}
+
+.education_area .education_inner_area:before, .career_area .career_inner_area:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 5px;
+}
+/* end center vertical line */
+
+/* start container */
+.education_area .education_inner_area .education_item, .career_area .career_inner_area .career_item{
+  width: 50%;
+  max-width: 420px;
+  min-height: 185px;
+  margin: 0px 5% 30px;
+  padding: 20px;
+  position: relative;
+}
+/* end container */
+
+/* start center circle */
+.education_area .education_inner_area .education_item:before, .career_area .career_inner_area .career_item:before{
+  content: attr(data-line);
+  position: absolute;
+  right: -28.5%;
+  top: 0px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 4px solid;
+  text-align: center;
+  line-height: 43px;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* start horizontal line */
+.education_area .education_inner_area .education_item:after, .career_area .career_inner_area .career_item:after{
+  content: "";
+  height: 4px;
+  position: absolute;
+  right: -23%;
+  top: 0px;
+  width: 123%;
+}
+
+.education_area .education_inner_area .education_item:nth-child(even), .career_area .career_inner_area .career_item:nth-child(even){
+  float: right;
+}
+
+.education_area .education_inner_area .education_item:nth-child(even):before, .career_area .career_inner_area .career_item:nth-child(even):before{
+  right: auto;
+  left: -27%;
+}
+
+.education_area .education_inner_area .education_item:nth-child(even):after, .career_area .career_inner_area .career_item:nth-child(even):after{
+  left: -23%;
+}
+
+.education_area .education_inner_area .education_item:nth-child(odd), .career_area .career_inner_area .career_item:nth-child(odd){
+  float: left;
+}
+
+.education_area .education_inner_area .education_item:nth-child(2), .career_area .career_inner_area .career_item:nth-child(2){
+  margin-top: 108px;
+}
+
+.education_area .education_inner_area .education_item:last-child, .career_area .career_inner_area .career_item:last-child{
+  margin-bottom: 0px;
+}
+
+.education_area .education_inner_area .education_item h6, .career_area .career_inner_area .career_item h6{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.education_area .education_inner_area .education_item h4, .career_area .career_inner_area .career_item h4{
+  font-size: 18px;
+  padding: 8px 0px 7px 0px;
+}
+
+.education_area .education_inner_area .education_item h5, .career_area .career_inner_area .career_item h5{
+  font-size: 14px;
+}
+
+.education_area .education_inner_area .education_item p, .career_area .career_inner_area .career_item p{
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 12px;
+}
+
+/* END EDUCATION AND CAREER AREA ========================================================================================= */
+
+/* START PORTFOLIO AREA ========================================================================================= */
+.portfolio_area{
+  width: 100%;
+}
+
+.portfolio_area .portfolio_item{
+  margin: auto .5rem;
+}
+.portfolio_area .portfolio_web_item{
+  max-width: 50%;
+  margin: auto;
+}
+
+.portfolio_area .portfolio_title h4{
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-img-top{
+  width: 100%;
+  height: 30vh;
+}
+
+.portfolio_inner_area{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: .5rem;
+}
+/* END PORTFOLIO AREA ========================================================================================= */
+
+/* START CONTACT AREA ========================================================================================= */
+.contact_area{
+  width: 100%;
+}
+.left_contact_details{
+  padding-left: 100px;
+}
+
+.left_contact_details .media{
+  margin-top: 30px;
+}
+
+.left_contact_details .media .media-left{
+  padding-right: 30px;
+}
+
+.left_contact_details .media .media-left i{
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  border: 1px solid;
+  transition: all 400ms linear 0s;
+}
+
+.left_contact_details .media .media-body h4{
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.left_contact_details .media .media-body p{
+  padding: 0px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* END CONTACT AREA ========================================================================================= */
