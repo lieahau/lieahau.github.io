@@ -91,7 +91,7 @@
     /* END EDUCATION */
 
     /* START PORTFOLIO */
-    .portfolio_area .portfolio_item, .portfolio_area .portfolio_web_item{
+    .portfolio_area .portfolio_item{
         max-width: 70%;
         margin: auto;
     }
@@ -162,9 +162,6 @@
     .portfolio_area .portfolio_item{
         max-width: 100%;
         margin: auto .5rem;
-    }
-    .portfolio_area .portfolio_web_item{
-        max-width: 50%;
     }
     /* END PORTFOLIO */
 

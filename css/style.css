@@ -348,10 +348,6 @@ a:hover, a:focus{
 .portfolio_area .portfolio_item{
   margin: auto .5rem;
 }
-.portfolio_area .portfolio_web_item{
-  max-width: 50%;
-  margin: auto;
-}
 
 .portfolio_area .portfolio_title h4{
   font-size: 28px;
