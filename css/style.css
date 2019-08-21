@@ -346,7 +346,7 @@ a:hover, a:focus{
 }
 
 .portfolio_area .portfolio_item{
-  margin: auto .5rem;
+  margin: 0 .5rem;
 }
 
 .portfolio_area .portfolio_title h4{
