@@ -70,6 +70,8 @@ a:hover, a:focus{
 
 .about_area .photo_area img{
   max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
 }
 
 .about_area .photo_area .download_btn{

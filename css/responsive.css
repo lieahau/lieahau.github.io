@@ -116,7 +116,11 @@
     .about_area .about_details h3{
         font-size: 24px;
     }
-    /* END EDUCATION */
+    .about_area .about_details .social_icon li{
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
+    /* END ABOUT */
 
     /* START SKILL */
     .skill_area .skill_title h4{
@@ -251,9 +255,6 @@
     }
     .about_area .about_details h5{
         font-size: 12px;
-    }
-    .about_area .about_details .social_icon li{
-        margin-right: 15px;
     }
     .competition_list .single_competition{
         font-size: 12px;

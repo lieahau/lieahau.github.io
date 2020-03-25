@@ -40,36 +40,53 @@ body{
 }
 
 .about_area .about_details .social_icon li:nth-child(1) a{
-    color: darkblue;
-    border-color: darkblue;
+    color: #3b5998;
+    border-color: #3b5998;
 }
 .about_area .about_details .social_icon li:nth-child(1):hover a{
-    background-color: darkblue;
+    background-color: #3b5998;
 }
 
 .about_area .about_details .social_icon li:nth-child(2) a{
-    color: #70c2e9;
-    border-color: #70c2e9;
+    color: #211F1F;
+    border-color: #211F1F;
 }
 .about_area .about_details .social_icon li:nth-child(2):hover a{
-    background-color: #70c2e9;
+    background-color: #211F1F;
 }
 
 .about_area .about_details .social_icon li:nth-child(3) a{
-    color: darkcyan;
-    border-color: darkcyan;
+    color: #3f729b;
+    border-color: #3f729b;
 }
 .about_area .about_details .social_icon li:nth-child(3):hover a{
-    background-color: darkcyan;
+    background-color: #3f729b;
 }
 
 .about_area .about_details .social_icon li:nth-child(4) a{
-    color: maroon;
-    border-color: maroon;
+    color: #0e76a8;
+    border-color: #0e76a8;
 }
 .about_area .about_details .social_icon li:nth-child(4):hover a{
-    background-color: maroon;
-    }
+    background-color: #0e76a8;
+}
+
+.about_area .about_details .social_icon li:nth-child(5) a{
+    color: #ef8236;
+    border-color: #ef8236;
+}
+.about_area .about_details .social_icon li:nth-child(5):hover a{
+    background-color: #ef8236;
+}
+
+.about_area .about_details .social_icon li:nth-child(6) a{
+    color: #c4302b;
+    border-color: #c4302b;
+}
+.about_area .about_details .social_icon li:nth-child(6):hover a{
+    background-color: #c4302b;
+}
+
 .about_area .about_details .social_icon li a:hover{
     color: white;
 }
