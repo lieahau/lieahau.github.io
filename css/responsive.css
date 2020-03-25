@@ -177,6 +177,12 @@
 }
 
 @media (max-width: 600px){
+    /* START ABOUT */
+    .about_area .about_details .social_icon li{
+        margin-bottom: 15px;
+        margin-right: 10px;
+    }
+    /* END ABOUT */
     /* START CONTACT */
     .left_contact_details{
         padding: 0px 3rem;
