@@ -1,0 +1,63 @@
+/* Ensure Navbar is a flex container */
+.navbar {
+  background: #001529;
+  padding: 0 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar container to keep items in one row */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Logo should not take full width */
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+/* Fix menu alignment */
+.navbar-menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Sticky Header */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #001529;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInNavbar 1s ease-out forwards;
+}
+
+/* Prevent content from being hidden under the navbar */
+.sticky-header + section,
+.sticky-header + div,
+.sticky-header + .row {
+  margin-top: 80px;
+}
+
+@keyframes fadeInNavbar {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
