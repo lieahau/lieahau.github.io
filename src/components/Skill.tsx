@@ -1,8 +1,7 @@
-import { Card, Col, Progress, Row, Typography } from "antd";
+import { Card, Col, Progress, Row } from "antd";
 import { useEffect, useRef, useState } from "react";
 import "./../styles/skill.css";
-
-const { Title } = Typography;
+import SectionTitle from "./SectionTitle";
 
 const skills = [
   {
@@ -111,34 +110,7 @@ const Skill = () => {
 
   return (
     <section id="skill" className="skill_area" ref={skillRef}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          marginBottom: "20px",
-        }}
-      >
-        <span
-          style={{
-            flex: 1,
-            height: "2px",
-            backgroundColor: "#000",
-            marginRight: "10px",
-          }}
-        ></span>
-        <Title level={2} style={{ margin: 0 }}>
-          SKILLS
-        </Title>
-        <span
-          style={{
-            flex: 1,
-            height: "2px",
-            backgroundColor: "#000",
-            marginLeft: "10px",
-          }}
-        ></span>
-      </div>
+      <SectionTitle title="SKILLS" />
 
       <Row
         gutter={[16, 16]}
