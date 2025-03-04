@@ -79,7 +79,8 @@ const Skill = () => {
     const handleScroll = () => {
       if (skillRef.current) {
         const rect = skillRef.current.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.75) {
+        const isSectionAppeared = rect.top < window.innerHeight * 0.75;
+        if (isSectionAppeared) {
           const timeouts: number[] = [];
           skills.forEach((category, categoryIndex) => {
             category.items.forEach((item, itemIndex) => {
@@ -103,18 +104,13 @@ const Skill = () => {
 
     window.addEventListener("scroll", handleScroll);
     setTimeout(() => {
-        handleScroll();
+      handleScroll();
     }, 1000);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <section
-      id="skill"
-      className="skill_area"
-      ref={skillRef}
-      
-    >
+    <section id="skill" className="skill_area" ref={skillRef}>
       <div
         style={{
           display: "flex",
