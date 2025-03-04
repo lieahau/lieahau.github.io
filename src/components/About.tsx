@@ -44,9 +44,9 @@ const About = () => {
           </Text>
           <p>
             Hi, I'm Budi (or Lie Ahau). A passionate learner and explorer in
-            programming, game development, web development, software
-            development, and multimedia. I also enjoy discovering new
-            experiences and honing skills in design, photo, and video editing.
+            programming, such as game development, web development, and software
+            development. I also enjoy discovering new
+            experiences in design, photo, and video editing.
           </p>
           <Title level={5} className="social-title">
             Social Networks:
