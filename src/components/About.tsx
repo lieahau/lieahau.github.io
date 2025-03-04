@@ -40,7 +40,7 @@ const About = () => {
             Senior Game Engineer
           </Title>
           <Text italic strong style={{ color: "#555555" }}>
-            "I don't rely on talent, but on relentless hard work."
+            "Dreams don't work unless you do."
           </Text>
           <p>
             Hi, I'm Budi (or Lie Ahau). A passionate learner and explorer in
