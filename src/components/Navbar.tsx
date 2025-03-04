@@ -3,13 +3,14 @@ import { Button, Drawer, Layout, Menu } from "antd";
 import { Link as ScrollLink } from "react-scroll";
 import "./../styles/navbar.css";
 import { MenuOutlined } from "@ant-design/icons";
+import { isMobileResolution } from "../utils";
 
 const { Header } = Layout;
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
+  const [isMobile, setIsMobile] = useState(isMobileResolution());
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
     };
 
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1200);
+      setIsMobile(isMobileResolution());
     };
 
     window.addEventListener("scroll", handleScroll);
