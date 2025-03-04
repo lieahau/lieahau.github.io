@@ -7,6 +7,23 @@ import { isMobileResolution } from "../utils";
 
 const { Header } = Layout;
 
+const menuItems = [
+  "about",
+  "skill",
+  "competition",
+  "education",
+  "career",
+  "portfolio",
+  "contact",
+].map((item) => ({
+  key: item,
+  label: (
+    <ScrollLink to={item} smooth={true} duration={500} offset={-80}>
+      {item.toUpperCase()}
+    </ScrollLink>
+  ),
+}));
+
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -28,23 +45,6 @@ const Navbar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [isSticky]);
-
-  const menuItems = [
-    "about",
-    "skill",
-    "competition",
-    "education",
-    "career",
-    "portfolio",
-    "contact",
-  ].map((item) => ({
-    key: item,
-    label: (
-      <ScrollLink to={item} smooth={true} duration={500} offset={-80}>
-        {item.toUpperCase()}
-      </ScrollLink>
-    ),
-  }));
 
   return (
     <Header className={`navbar ${isSticky ? "sticky-header" : ""}`}>
