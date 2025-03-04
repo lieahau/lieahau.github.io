@@ -13,7 +13,7 @@ const App = () => {
       <Preloader />
       <Layout>
         <Navbar />
-        <Content style={{ minHeight: "200vh", padding: "20px" }}>
+        <Content>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
