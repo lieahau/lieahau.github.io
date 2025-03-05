@@ -2,7 +2,7 @@ import { Timeline, Card, Typography, Divider } from "antd";
 import { ClockCircleOutlined } from "@ant-design/icons";
 import SectionTitle from "./SectionTitle";
 
-const { Text, Link } = Typography;
+const { Title, Text, Link } = Typography;
 
 interface CareerProps {
   style?: React.CSSProperties;
@@ -102,9 +102,10 @@ const Career: React.FC<CareerProps> = ({ style }) => {
               <Text strong>{job.date}</Text>
               <br />
               <Link href={job.url} target="_blank">
-                {job.company}
+                <Title level={4} style={{ margin: "8px 0", color: "#1677ff" }}>
+                  {job.company}
+                </Title>
               </Link>
-              <br />
               <Text type="secondary">{job.position}</Text>
 
               <Divider />
