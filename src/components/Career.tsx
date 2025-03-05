@@ -1,4 +1,4 @@
-import { Timeline, Card, Typography } from "antd";
+import { Timeline, Card, Typography, Divider } from "antd";
 import { ClockCircleOutlined } from "@ant-design/icons";
 import SectionTitle from "./SectionTitle";
 
@@ -95,20 +95,21 @@ const Career: React.FC<CareerProps> = ({ style }) => {
           dot: <ClockCircleOutlined style={{ fontSize: "16px" }} />,
           children: (
             <Card
-              title={
-                <>
-                  <Text strong>{job.date}</Text>
-                  <br />
-                  <Link href={job.url} target="_blank">
-                    {job.company}
-                  </Link>
-                  <br />
-                  <Text type="secondary">{job.position}</Text>
-                </>
-              }
               size="small"
               style={{ marginBottom: "16px", padding: "16px" }}
             >
+              {/* Title */}
+              <Text strong>{job.date}</Text>
+              <br />
+              <Link href={job.url} target="_blank">
+                {job.company}
+              </Link>
+              <br />
+              <Text type="secondary">{job.position}</Text>
+
+              <Divider />
+
+              {/* Content */}
               {job.description && (
                 <>
                   <Text>{job.description}</Text>

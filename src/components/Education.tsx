@@ -1,4 +1,4 @@
-import { Card, Typography } from "antd";
+import { Card, Divider, Typography } from "antd";
 import SectionTitle from "./SectionTitle";
 
 const { Title, Text } = Typography;
@@ -43,6 +43,7 @@ const Education = () => {
             variant="borderless"
             style={{ backgroundColor: "#f0f5ff" }}
           >
+            {/* Title */}
             <Text type="secondary">{edu.year}</Text>
             <Title level={4} style={{ margin: "8px 0" }}>
               {edu.link ? (
@@ -54,6 +55,10 @@ const Education = () => {
               )}
             </Title>
             <Text strong>{edu.major}</Text>
+
+            <Divider />
+
+            {/* Content */}
             <p style={{ marginTop: "8px", whiteSpace: "pre-line" }}>
               {edu.description}
             </p>
