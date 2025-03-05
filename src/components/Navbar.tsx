@@ -4,30 +4,23 @@ import { Link as ScrollLink } from "react-scroll";
 import "./../styles/navbar.css";
 import { MenuOutlined } from "@ant-design/icons";
 import { isMobileResolution } from "../utils";
+import { navbarData } from "../data/navbarData";
 
 const { Header } = Layout;
-
-const menuItems = [
-  "about",
-  "skill",
-  "career",
-  "competition",
-  "education",
-  "portfolio",
-  "contact",
-].map((item) => ({
-  key: item,
-  label: (
-    <ScrollLink to={item} smooth={true} duration={500} offset={-80}>
-      {item.toUpperCase()}
-    </ScrollLink>
-  ),
-}));
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(isMobileResolution());
+
+  const menuItems = navbarData.map((item) => ({
+    key: item,
+    label: (
+      <ScrollLink to={item} smooth={true} duration={500} offset={-80}>
+        {item.toUpperCase()}
+      </ScrollLink>
+    ),
+  }));
 
   useEffect(() => {
     const handleScroll = () => {
