@@ -10,7 +10,7 @@ import {
 import "./../styles/about.css";
 import myPhoto from "../assets/my-photo.jpg";
 
-const { Title, Text } = Typography;
+const { Title, Text, Paragraph, Link } = Typography;
 
 interface AboutProps {
   style?: React.CSSProperties;
@@ -46,51 +46,37 @@ const About: React.FC<AboutProps> = ({ style }) => {
           <Text italic strong style={{ color: "#555555" }}>
             "Dreams don't work unless you do."
           </Text>
-          <p>
+          <Paragraph>
             Hi, I'm Budi (or Lie Ahau). A passionate learner and explorer in
             programming, such as game development, web development, and software
             development. I also enjoy discovering new experiences in design,
             photo, and video editing.
-          </p>
+          </Paragraph>
           <Title level={5} className="social-title">
             Social Networks:
           </Title>
           <Space size="middle" className="social-icons">
-            <a
-              href="https://www.facebook.com/Lie.Xiang.Hau"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://www.facebook.com/Lie.Xiang.Hau" target="_blank">
               <FacebookFilled className="social-icon facebook" />
-            </a>
-            <a
-              href="https://github.com/lieahau"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            </Link>
+            <Link href="https://github.com/lieahau" target="_blank">
               <GithubOutlined className="social-icon github" />
-            </a>
-            <a
-              href="https://www.instagram.com/starliez/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            </Link>
+            <Link href="https://www.instagram.com/starliez/" target="_blank">
               <InstagramFilled className="social-icon instagram" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/budimanputra/"
               target="_blank"
-              rel="noopener noreferrer"
             >
               <LinkedinFilled className="social-icon linkedin" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.youtube.com/channel/UCt0ujeWmWwR0HO5HLHx4Kdg"
               target="_blank"
-              rel="noopener noreferrer"
             >
               <YoutubeFilled className="social-icon youtube" />
-            </a>
+            </Link>
           </Space>
         </Col>
       </Row>
