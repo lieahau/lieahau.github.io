@@ -1,0 +1,11 @@
+/* Ensure Ant Design Title respects the color */
+.card-title {
+    color: #1890ff !important;
+    margin: 0;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  /* Change color on hover */
+  .card-title-link:hover .card-title {
+    color: #40a9ff !important; /* Lighter blue when hovered */
+  }
