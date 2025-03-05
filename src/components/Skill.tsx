@@ -2,6 +2,10 @@ import { Card, Col, Progress, Row } from "antd";
 import { useEffect, useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
 
+interface SkillProps {
+  style?: React.CSSProperties;
+}
+
 const skills = [
   {
     category: "Game Development",
@@ -67,7 +71,7 @@ const skills = [
   },
 ];
 
-const Skill = () => {
+const Skill: React.FC<SkillProps> = ({ style }) => {
   const [progressLevels, setProgressLevels] = useState(
     skills.map((category) => category.items.map(() => 0))
   );
@@ -112,7 +116,7 @@ const Skill = () => {
       id="skill"
       className="skill_area"
       ref={skillRef}
-      style={{ backgroundColor: "lightsteelblue" }}
+      style={{ ...style }}
     >
       <SectionTitle title="SKILLS" />
 

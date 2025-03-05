@@ -12,9 +12,13 @@ import myPhoto from "../assets/my-photo.jpg";
 
 const { Title, Text } = Typography;
 
-const About = () => {
+interface AboutProps {
+  style?: React.CSSProperties;
+}
+
+const About: React.FC<AboutProps> = ({ style }) => {
   return (
-    <section className="about_area" id="about">
+    <section className="about_area" id="about" style={{ ...style }}>
       <Row gutter={[32, 32]}>
         <Col xs={24} md={10} className="photo_area">
           <Image
@@ -45,8 +49,8 @@ const About = () => {
           <p>
             Hi, I'm Budi (or Lie Ahau). A passionate learner and explorer in
             programming, such as game development, web development, and software
-            development. I also enjoy discovering new
-            experiences in design, photo, and video editing.
+            development. I also enjoy discovering new experiences in design,
+            photo, and video editing.
           </p>
           <Title level={5} className="social-title">
             Social Networks:

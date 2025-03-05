@@ -4,6 +4,10 @@ import SectionTitle from "./SectionTitle";
 
 const { Text } = Typography;
 
+interface CompetitionProps {
+  style?: React.CSSProperties;
+}
+
 const competitions = [
   { year: "2021", type: "participation", name: "Global Game Jam" },
   { year: "2020", type: "participation", name: "Global Game Jam" },
@@ -146,11 +150,15 @@ const timelineItems = sortedYears.flatMap((year) => [
   },
 ]);
 
-const Competition = () => {
+const Competition: React.FC<CompetitionProps> = ({ style }) => {
   return (
-    <section id="competition" className="competition_area">
+    <section id="competition" className="competition_area" style={{ ...style }}>
       <SectionTitle title="COMPETITIONS" />
-      <Timeline style={{ margin: "20px" }} mode="alternate" items={timelineItems} />
+      <Timeline
+        style={{ margin: "20px" }}
+        mode="alternate"
+        items={timelineItems}
+      />
     </section>
   );
 };

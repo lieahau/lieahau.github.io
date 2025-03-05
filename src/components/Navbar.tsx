@@ -10,9 +10,9 @@ const { Header } = Layout;
 const menuItems = [
   "about",
   "skill",
+  "career",
   "competition",
   "education",
-  "career",
   "portfolio",
   "contact",
 ].map((item) => ({
