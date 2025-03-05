@@ -20,7 +20,7 @@ const CardTitle: React.FC<CardTitleProps> = ({ title, link }) => {
       </Title>
     </Link>
   ) : (
-    <Title level={4} className="card-title">
+    <Title level={4} style={{ margin: 0 }}>
       {title}
     </Title>
   );

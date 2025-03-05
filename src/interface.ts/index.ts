@@ -16,6 +16,14 @@ export interface CompetitionItem {
   name: string;
 }
 
+export interface EducationItem {
+  year: string;
+  institution: string;
+  description: string;
+  link?: string;
+  major?: string;
+}
+
 interface PortfolioItemDetail {
   label: string;
   value: string;
