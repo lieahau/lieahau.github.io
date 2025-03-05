@@ -2,7 +2,6 @@ import { Layout } from "antd";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Preloader from "./components/Preloader";
-import "./App.css";
 import Home from "./pages/Home";
 
 const { Content, Footer } = Layout;
