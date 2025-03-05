@@ -12,12 +12,3 @@ body {
 #home section {
   padding: 40px 3rem;
 }
-
-.ant-timeline-item-content h6, 
-.ant-timeline-item-content h4, 
-.ant-timeline-item-content h5 {
-  white-space: normal; /* Allow wrapping */
-  overflow: visible; /* Ensure no hidden text */
-  text-overflow: clip; /* Remove ellipsis */
-  display: block; /* Prevent inline-block cutting */
-}
