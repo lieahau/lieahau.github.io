@@ -37,3 +37,13 @@ export interface PortfolioItem {
   details: PortfolioItemDetail[];
   year: string;
 }
+
+interface SkillDetail {
+  name: string;
+  level: number;
+}
+
+export interface SkillItem {
+  category: string;
+  items: SkillDetail[];
+}
