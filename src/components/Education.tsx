@@ -35,7 +35,7 @@ const educationData = [
 const Education = () => {
   return (
     <section id="education">
-      <SectionTitle title="EDUCATION" />
+      <SectionTitle title="EDUCATIONS" />
       <div style={{ display: "grid", gap: "20px" }}>
         {educationData.map((edu, index) => (
           <Card
