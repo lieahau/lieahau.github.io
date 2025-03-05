@@ -1,0 +1,51 @@
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-image-container {
+  width: 100%;
+  height: 200px; /* Ensures uniform image height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images are properly resized */
+}
+
+/* Set fixed height for details list */
+.portfolio-details {
+  min-height: 300px; /* Adjust based on content */
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+/* Push footer to the bottom */
+.portfolio-card-footer {
+  margin-top: auto; /* Ensures it's always at the bottom */
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+/* Ensure Ant Design Title respects the color */
+.portfolio-title {
+  color: #1890ff !important;
+  margin: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Change color on hover */
+.portfolio-title-link:hover .portfolio-title {
+  color: #40a9ff !important; /* Lighter blue when hovered */
+}
