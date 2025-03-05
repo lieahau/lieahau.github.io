@@ -5,6 +5,7 @@ import {
   GithubOutlined,
   InstagramFilled,
   LinkedinFilled,
+  MailOutlined,
   YoutubeFilled,
 } from "@ant-design/icons";
 import "./../styles/about.css";
@@ -46,12 +47,22 @@ const About: React.FC<AboutProps> = ({ style }) => {
           <Text italic strong style={{ color: "#555555" }}>
             "Dreams don't work unless you do."
           </Text>
+          <br />
+          <br />
           <Paragraph>
             Hi, I'm Budi (or Lie Ahau). A passionate learner and explorer in
             programming, such as game development, web development, and software
             development. I also enjoy discovering new experiences in design,
             photo, and video editing.
           </Paragraph>
+
+          <Title level={5}>Contact Me:</Title>
+          <Space>
+            <MailOutlined style={{ fontSize: "30px" }} />
+            <Link href="mailto:budimanputrajaya2@gmail.com" target="_blank">
+              budimanputrajaya2@gmail.com
+            </Link>
+          </Space>
           <Title level={5} className="social-title">
             Social Networks:
           </Title>

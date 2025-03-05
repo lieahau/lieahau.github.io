@@ -5,5 +5,4 @@ export const navbarData = [
   "competition",
   "education",
   "portfolio",
-  "contact",
 ];
