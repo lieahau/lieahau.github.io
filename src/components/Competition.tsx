@@ -1,7 +1,6 @@
 import { Timeline, Typography, Card } from "antd";
 import { TrophyOutlined, FlagOutlined } from "@ant-design/icons";
 import SectionTitle from "./SectionTitle";
-import "./../styles/competition.css";
 
 const { Text } = Typography;
 
@@ -118,7 +117,6 @@ const sortedYears = Object.keys(groupedCompetitions).sort(
 );
 
 const timelineItems = sortedYears.flatMap((year) => [
-  // Year Label
   {
     label: (
       <Text strong style={{ fontSize: "16px" }}>

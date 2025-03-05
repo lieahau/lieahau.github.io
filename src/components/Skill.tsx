@@ -1,6 +1,5 @@
 import { Card, Col, Progress, Row } from "antd";
 import { useEffect, useRef, useState } from "react";
-import "./../styles/skill.css";
 import SectionTitle from "./SectionTitle";
 
 const skills = [
@@ -109,7 +108,12 @@ const Skill = () => {
   }, []);
 
   return (
-    <section id="skill" className="skill_area" ref={skillRef}>
+    <section
+      id="skill"
+      className="skill_area"
+      ref={skillRef}
+      style={{ backgroundColor: "lightsteelblue" }}
+    >
       <SectionTitle title="SKILLS" />
 
       <Row
