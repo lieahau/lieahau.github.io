@@ -1,3 +1,5 @@
+import { COMPETITION_TYPE } from "../enum";
+
 export interface CareerItem {
   date: string;
   company: string;
@@ -6,6 +8,12 @@ export interface CareerItem {
   responsibilities?: string[];
   description?: string;
   techUsed?: string[];
+}
+
+export interface CompetitionItem {
+  year: string;
+  type: COMPETITION_TYPE;
+  name: string;
 }
 
 interface PortfolioItemDetail {
