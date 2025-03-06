@@ -232,10 +232,23 @@ export const websitePortfolio: PortfolioItem[] = [
     year: "Developed from 2024 to 2025",
   },
   {
+    title: "Kazuo",
+    image: "/assets/featuredimage-kazuo.png",
+    link: "https://kazuo.co.id",
+    details: [
+      { label: "For", value: "Kazuo Website Company Profile" },
+      { label: "Position", value: "Front-end Developer" },
+      { label: "Programming", value: "ReactJS" },
+      { label: "Workplace", value: "Freelance" },
+    ],
+    year: "Created on 2023",
+  },
+  {
     title: "KiriminBuku",
     image: "/assets/featuredimage-kiriminbuku.png",
     link: "https://kiriminbuku.com/",
     details: [
+      { label: "For", value: "KiriminBuku Website Company Profile" },
       { label: "Position", value: "Back-end Developer" },
       { label: "Programming", value: "Python3 (Django REST Framework)" },
       {
