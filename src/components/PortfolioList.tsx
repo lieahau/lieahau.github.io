@@ -1,12 +1,13 @@
 import { Card, Col, Row, Typography, List, Image } from "antd";
 import { PortfolioItem } from "../interface.ts";
 import "./../styles/portfolio.css";
+import CardTitle from "./CardTitle.tsx";
 
 export interface PortfolioListProps {
   data: PortfolioItem[];
 }
 
-const { Title, Link, Text } = Typography;
+const { Link, Text } = Typography;
 
 const PortfolioList: React.FC<PortfolioListProps> = ({ data }) => {
   return (
@@ -30,33 +31,33 @@ const PortfolioList: React.FC<PortfolioListProps> = ({ data }) => {
             }
           >
             <Card.Meta
-              title={
-                <Link href={item.link} target="_blank" className="portfolio-title-link">
-                  <Title level={4}  className="portfolio-title" style={{ margin: 0, color: "#1890ff", }}>
-                    {item.title}
-                  </Title>
-                </Link>
-              }
               description={
-                <List
-                  size="small"
-                  className="portfolio-details"
-                  dataSource={item.details}
-                  renderItem={(detail) => (
-                    <List.Item>
-                      <List.Item.Meta
-                        title={detail.label}
-                        description={detail.link ? (
-                          <Link href={detail.link} target="_blank">
-                            {detail.value}
-                          </Link>
-                        ) : (
-                          <Text>{detail.value}</Text>
-                        )}
-                      />
-                    </List.Item>
-                  )}
-                />
+                <>
+                  <div className="portfolio-title">
+                    <CardTitle title={item.title} link={item.link} />
+                  </div>
+                  <List
+                    size="small"
+                    className="portfolio-details"
+                    dataSource={item.details}
+                    renderItem={(detail) => (
+                      <List.Item>
+                        <List.Item.Meta
+                          title={detail.label}
+                          description={
+                            detail.link && detail.link !== "" ? (
+                              <Link href={detail.link} target="_blank">
+                                {detail.value}
+                              </Link>
+                            ) : (
+                              <Text>{detail.value}</Text>
+                            )
+                          }
+                        />
+                      </List.Item>
+                    )}
+                  />
+                </>
               }
             />
             <div className="portfolio-card-footer">{item.year}</div>

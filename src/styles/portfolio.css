@@ -20,6 +20,11 @@
   object-fit: cover; /* Ensures images are properly resized */
 }
 
+.portfolio-title {
+  min-height: 50px;
+  max-height: 100px;
+}
+
 /* Set fixed height for details list */
 .portfolio-details {
   min-height: 300px; /* Adjust based on content */
@@ -36,16 +41,4 @@
   padding: 10px 0;
   border-top: 1px solid #eee;
   background: #fafafa;
-}
-
-/* Ensure Ant Design Title respects the color */
-.portfolio-title {
-  color: #1890ff !important;
-  margin: 0;
-  transition: color 0.2s ease-in-out;
-}
-
-/* Change color on hover */
-.portfolio-title-link:hover .portfolio-title {
-  color: #40a9ff !important; /* Lighter blue when hovered */
 }

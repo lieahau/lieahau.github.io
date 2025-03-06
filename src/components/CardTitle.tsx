@@ -9,7 +9,7 @@ interface CardTitleProps {
 const { Title, Link } = Typography;
 
 const CardTitle: React.FC<CardTitleProps> = ({ title, link }) => {
-  return link ? (
+  return link && link !== "" ? (
     <Link href={link} target="_blank" className="card-title-link">
       <Title
         level={4}

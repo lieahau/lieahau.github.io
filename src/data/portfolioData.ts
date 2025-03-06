@@ -221,6 +221,17 @@ export const gamePortfolio: PortfolioItem[] = [
 
 export const websitePortfolio: PortfolioItem[] = [
   {
+    title: "Cocos Dev Tool (Internal Plugin)",
+    image: "/assets/featuredimage-cocosdevtool.png",
+    details: [
+      { label: "For", value: "Web Game Development Tool in Cocos Creator 3" },
+      { label: "Position", value: "Front-end Developer" },
+      { label: "Programming", value: "ReactJS" },
+      { label: "Workplace", value: "Shopee", link: "https://shopee.co.id" },
+    ],
+    year: "Developed from 2024 to 2025",
+  },
+  {
     title: "KiriminBuku",
     image: "/assets/featuredimage-kiriminbuku.png",
     link: "https://kiriminbuku.com/",

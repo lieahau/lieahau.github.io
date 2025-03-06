@@ -33,7 +33,7 @@ interface PortfolioItemDetail {
 export interface PortfolioItem {
   title: string;
   image: string;
-  link: string;
+  link?: string;
   details: PortfolioItemDetail[];
   year: string;
 }
