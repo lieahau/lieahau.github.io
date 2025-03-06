@@ -3,7 +3,7 @@ import { PortfolioItem } from "../interface.ts";
 export const gamePortfolio: PortfolioItem[] = [
   {
     title: "Shopee Cocoki",
-    image: "src/assets/Portfolio/featuredimage-shopeecocoki.jpg",
+    image: "src/assets/featuredimage-shopeecocoki.jpg",
     link: "https://play.google.com/store/apps/details?id=com.shopee.id&hl=id",
     details: [
       { label: "Dimension", value: "2D" },
@@ -19,7 +19,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Shopee Tebak Kata",
-    image: "src/assets/Portfolio/featuredimage-shopeetebakkata.jpg",
+    image: "src/assets/featuredimage-shopeetebakkata.jpg",
     link: "https://play.google.com/store/apps/details?id=com.shopee.id&hl=id",
     details: [
       { label: "Dimension", value: "2D" },
@@ -35,7 +35,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Shopee Bubble",
-    image: "src/assets/Portfolio/featuredimage-shopeebubble.jpg",
+    image: "src/assets/featuredimage-shopeebubble.jpg",
     link: "https://play.google.com/store/apps/details?id=com.shopee.id&hl=id",
     details: [
       { label: "Dimension", value: "2D" },
@@ -54,7 +54,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Isolomn",
-    image: "src/assets/Portfolio/featuredimage-ggj21.png",
+    image: "src/assets/featuredimage-ggj21.png",
     link: "https://globalgamejam.org/2021/games/isolomn-9",
     details: [
       { label: "Dimension", value: "2D" },
@@ -69,7 +69,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Tower Dungeon",
-    image: "src/assets/Portfolio/featuredimage-towerdungeon.png",
+    image: "src/assets/featuredimage-towerdungeon.png",
     link: "https://play.google.com/store/apps/details?id=com.LastBossStudio.TowerDungeon",
     details: [
       { label: "Dimension", value: "3D" },
@@ -84,7 +84,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Stay Away Virus!!!",
-    image: "src/assets/Portfolio/featuredimage-stayawayvirus.png",
+    image: "src/assets/featuredimage-stayawayvirus.png",
     link: "https://luckandhopegames.itch.io/stay-away-virus",
     details: [
       { label: "Dimension", value: "2D" },
@@ -99,7 +99,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Mineself",
-    image: "src/assets/Portfolio/featuredimage-ggj20.jpg",
+    image: "src/assets/featuredimage-ggj20.jpg",
     link: "https://globalgamejam.org/2020/games/mineself-4",
     details: [
       { label: "Dimension", value: "2D" },
@@ -114,7 +114,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Endless Nightmare",
-    image: "src/assets/Portfolio/featuredimage-endlessnightmare.png",
+    image: "src/assets/featuredimage-endlessnightmare.png",
     link: "https://umn.itch.io/endless-nightmare",
     details: [
       { label: "Dimension", value: "3D" },
@@ -129,7 +129,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Grim Repear Game",
-    image: "src/assets/Portfolio/featuredimage-ggj19.png",
+    image: "src/assets/featuredimage-ggj19.png",
     link: "https://globalgamejam.org/2019/games/grim-reaper-game",
     details: [
       { label: "Dimension", value: "3D" },
@@ -144,7 +144,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "The Crystal Guardian",
-    image: "src/assets/Portfolio/featuredimage-crystalguardianbeta.jpg",
+    image: "src/assets/featuredimage-crystalguardianbeta.jpg",
     link: "https://play.google.com/store/apps/details?id=com.gamedevjr.crystalguardian",
     details: [
       { label: "Dimension", value: "2D" },
@@ -159,7 +159,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "EyeLevator",
-    image: "src/assets/Portfolio/featuredimage-ggj18.png",
+    image: "src/assets/featuredimage-ggj18.png",
     link: "https://globalgamejam.org/2018/games/eyelevator",
     details: [
       { label: "Dimension", value: "2.5D" },
@@ -174,7 +174,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Save the Pyurii's",
-    image: "src/assets/Portfolio/featuredimage-ggj17.jpg",
+    image: "src/assets/featuredimage-ggj17.jpg",
     link: "https://globalgamejam.org/2017/games/save-pyuriis",
     details: [
       { label: "Dimension", value: "2D" },
@@ -189,7 +189,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Changed",
-    image: "src/assets/Portfolio/featuredimage-changed.png",
+    image: "src/assets/featuredimage-changed.png",
     link: "https://drive.google.com/file/d/1TbSRVsHeQ8Ppz5C3VCKUVXYToIQ_rwNi/view?usp=sharing",
     details: [
       { label: "Dimension", value: "2D" },
@@ -204,7 +204,7 @@ export const gamePortfolio: PortfolioItem[] = [
   },
   {
     title: "Shining Wars: Light of Destruction",
-    image: "src/assets/Portfolio/featuredimage-shiningwars.png",
+    image: "src/assets/featuredimage-shiningwars.png",
     link: "https://drive.google.com/file/d/1XS_yoxq4-5rmcWial-Mfxj3tywgRPhAA/view?usp=sharing",
     details: [
       { label: "Dimension", value: "2D" },
@@ -222,7 +222,7 @@ export const gamePortfolio: PortfolioItem[] = [
 export const websitePortfolio: PortfolioItem[] = [
   {
     title: "KiriminBuku",
-    image: "src/assets/Portfolio/featuredimage-kiriminbuku.png",
+    image: "src/assets/featuredimage-kiriminbuku.png",
     link: "https://kiriminbuku.com/",
     details: [
       { label: "Position", value: "Back-end Developer" },
@@ -237,7 +237,7 @@ export const websitePortfolio: PortfolioItem[] = [
   },
   {
     title: "E-Commerce Website",
-    image: "src/assets/Portfolio/featuredimage-wishoes.png",
+    image: "src/assets/featuredimage-wishoes.png",
     link: "http://wishoes.epizy.com",
     details: [
       { label: "For", value: "College course's project" },
@@ -256,7 +256,7 @@ export const websitePortfolio: PortfolioItem[] = [
   },
   {
     title: "Social Media Website",
-    image: "src/assets/Portfolio/featuredimage-facenote.png",
+    image: "src/assets/featuredimage-facenote.png",
     link: "http://facenote.epizy.com",
     details: [
       { label: "For", value: "College course's project" },
@@ -275,7 +275,7 @@ export const websitePortfolio: PortfolioItem[] = [
   },
   {
     title: "The Movie Database Website",
-    image: "src/assets/Portfolio/featuredimage-moviedb.png",
+    image: "src/assets/featuredimage-moviedb.png",
     link: "https://uaspti2018budiman.netlify.com",
     details: [
       { label: "For", value: "College course's project" },
