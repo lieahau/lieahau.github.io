@@ -44,14 +44,16 @@ const PortfolioList: React.FC<PortfolioListProps> = ({ data }) => {
                   dataSource={item.details}
                   renderItem={(detail) => (
                     <List.Item>
-                      <Text strong>{detail.label}: </Text>
-                      {detail.link ? (
-                        <Link href={detail.link} target="_blank">
-                          {detail.value}
-                        </Link>
-                      ) : (
-                        <Text>{detail.value}</Text>
-                      )}
+                      <List.Item.Meta
+                        title={detail.label}
+                        description={detail.link ? (
+                          <Link href={detail.link} target="_blank">
+                            {detail.value}
+                          </Link>
+                        ) : (
+                          <Text>{detail.value}</Text>
+                        )}
+                      />
                     </List.Item>
                   )}
                 />
