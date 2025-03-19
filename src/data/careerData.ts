@@ -2,7 +2,7 @@ import { CareerItem } from "../interface.ts";
 
 export const careerData: CareerItem[] = [
   {
-    date: "January 2023 - Present",
+    date: "January 2023 - March 2025",
     company: "Sea Labs (Shopee) Indonesia",
     url: "https://shopee.co.id",
     position: "Senior Game Engineer",
@@ -12,7 +12,7 @@ export const careerData: CareerItem[] = [
       "Developer of Shopee Bubble game.",
       "Creator of Cocos Dev Tool Plugin.",
     ],
-    techUsed: ["TypeScript", "Cocos 3 game engine", "ReactJS"],
+    techUsed: ["TypeScript", "Cocos 3 Game Engine", "ReactJS"],
   },
   {
     date: "November 2020 - December 2022",
@@ -23,7 +23,7 @@ export const careerData: CareerItem[] = [
       "Developer of Shopee Bubble game.",
       "Developer of Shopee Tebak Kata game.",
     ],
-    techUsed: ["TypeScript", "Phaser 3 game engine", "Cocos 3 game engine"],
+    techUsed: ["TypeScript", "Phaser 3 Game Engine", "Cocos 3 Game Engine"],
   },
   {
     date: "June 2020 - September 2020",
