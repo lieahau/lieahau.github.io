@@ -3,11 +3,11 @@ import { EducationItem } from "../interface.ts";
 export const educationData: EducationItem[] = [
   {
     year: "2016 - 2020",
-    institution: "Universitas Multimedia Nusantara",
+    institution: "Multimedia Nusantara University (UMN)",
     link: "https://www.umn.ac.id",
-    major: "Informatics - Game Development",
+    major: "Computer Science - Game Development",
     description:
-      "During my time at UMN, I specialized in Informatics with a focus on Game Development.\n" +
+      "During my time at UMN, I specialized in computer science with a focus on Game Development.\n" +
       "I actively participated in two organizations: the Game Development Club (GDC), where I both learned and taught game development concepts,\n" +
       "and the UMN Programming Club (UMNPC), which allowed me to study, teach, and compete in Competitive Programming.",
   },

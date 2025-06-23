@@ -42,7 +42,7 @@ const About: React.FC<AboutProps> = ({ style }) => {
             Hi! I'm <span style={{ color: "#26b7e7" }}>Budiman Putra Jaya</span>
           </Title>
           <Title level={4} style={{ marginTop: "0px" }}>
-            Senior Game Engineer
+            Senior Engineer
           </Title>
           <Text italic strong style={{ color: "#555555" }}>
             "Dreams don't work unless you do."
@@ -50,10 +50,11 @@ const About: React.FC<AboutProps> = ({ style }) => {
           <br />
           <br />
           <Paragraph>
-            Hi, I'm Budi (or Lie Ahau). A passionate learner and explorer in
-            programming, such as game development, web development, and software
-            development. I also enjoy discovering new experiences in design,
-            photo, and video editing.
+            Hi, I'm Budi (or Lie Ahau). 
+            A versatile Engineer with a strong foundation in both front-end and back-end development for websites and games. 
+            Proficient in TypeScript, ReactJS, Python, and related frameworks, as well as Cocos and Unity game engines. 
+            Experienced in leading front-end engineering teams and collaborating effectively with cross-functional stakeholders. 
+            Passionate about continuous learning and applying technology to improve performance and user engagement.
           </Paragraph>
 
           <Title level={5}>Contact Me:</Title>

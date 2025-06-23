@@ -27,7 +27,7 @@ export const skillData: SkillItem[] = [
     category: "Backend Development",
     items: [
       { name: "Python3 (Django Rest Framework)", level: 75 },
-      { name: "PHP", level: 70 },
+      { name: "PHP (CodeIgniter)", level: 70 },
       { name: "MySQL", level: 70 },
     ],
   },
@@ -37,30 +37,6 @@ export const skillData: SkillItem[] = [
     items: [
       { name: "C++", level: 85 },
       { name: "C", level: 80 },
-    ],
-  },
-  {
-    category: "Multimedia",
-    items: [
-      { name: "Adobe Photoshop", level: 55 },
-      { name: "Adobe Premiere Pro", level: 50 },
-      { name: "Adobe After Effects", level: 40 },
-      { name: "Photography", level: 40 },
-    ],
-  },
-  {
-    category: "Software Development",
-    items: [
-      { name: "Java", level: 55 },
-      { name: "Visual Basic", level: 35 },
-    ],
-  },
-  {
-    category: "Office & Productivity",
-    items: [
-      { name: "Microsoft Excel", level: 80 },
-      { name: "Microsoft Word", level: 80 },
-      { name: "Microsoft PowerPoint", level: 70 },
     ],
   },
 ];
