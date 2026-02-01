@@ -221,6 +221,23 @@ export const gamePortfolio: PortfolioItem[] = [
 
 export const websitePortfolio: PortfolioItem[] = [
   {
+    title: "Artist Artworks Portfolio Website",
+    image: "/assets/featuredimage-artistportfolio.png",
+    link: "https://jolly-paletas-6c8297.netlify.app/",
+    details: [
+      { label: "For", value: "Artwork Portfolio Website" },
+      { label: "Position", value: "Front-end Developer" },
+      { label: "Programming", value: "ReactJS" },
+      { label: "Workplace", value: "Freelance" },
+      {
+        label: "Source Code",
+        value: "Github",
+        link: "https://github.com/lieahau/react-artwork-portfolio-website",
+      },
+    ],
+    year: "Developed on 2025",
+  },
+  {
     title: "Cocos Dev Tool (Internal Plugin)",
     image: "/assets/featuredimage-cocosdevtool.png",
     details: [
